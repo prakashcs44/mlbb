@@ -9,7 +9,12 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-
+body{
+    background-image: url("./pics/mobile-legends-wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
 
 
 .navbar{
@@ -62,131 +67,100 @@
 .details{
     width:80vw;
     height:700px;
-    border: 2px solid black;
-    margin: auto;
-    margin-top: 50px;
-}
-
-
-.register{
-    width:60vw;
-    height:600px;
-    border: 2px solid black;
-    margin: auto;
-    margin-top: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.form{
-    width:60%;
-    height:100%;
     /* border: 2px solid black; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-   
+    margin: auto;
+    margin-top: 50px;
 }
 
-.form-input{
+.details img{
+    width:100%;
+    height:100%;
+}
+
+
+
+
+
+/* Apply some basic styling to the form container */
+.register-form {
+    width: 80%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Style the registration title */
+  .register-text p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Style the input fields and placeholders */
+  .register-input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  /* Style the team members section */
+  .team-members {
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    margin-top: 10px;
+  }
+  
+  /* Style the submit button */
+  .register-submit {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .register-submit:hover {
+    background-color: #0056b3;
+  }
+  
+  
+
+  .register-input{
+
     transition: transform 0.5s;
-}
 
-.form-input:hover{
+  }
+
+
+
+
+.register-input:hover{
     transform: scale(1.1,1.1);
 }
 
-.team-members{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-   
-}
 
-.team-members input{
-    margin-top: 10px;
-}
+.register-submit{
 
+    transition: transform 0.5s;
 
-.team-members p{
-    font-size: 1.1rem;
-
-}
-
-.text{
-    font-size: 2.5rem;
-    
-}
-
-.form input{
-    width:300px;
-    height:50px;
-    padding-left: 10px;
-    border-radius: 10px;
-}
-
-button{
-    width:200px;
-    height:60px;
-    border-radius: 20px;
-    font-size: 1.3rem;
-    
-}
-
-
-
-@media (max-width:770px){
-    .form input{
-        width:150px;
-        height:30px;
-        padding-left: 10px;
-        border-radius: 10px;
-    }
-    
-}
-
-
-@media (max-width:348px){
-  button{
-    width:100px;
-    height:30px;
-    border-radius: 10px;
-    font-size: 1.2rem;
   }
 
-  .form input{
-    width:120px;
-    height:20px;
-    padding-left: 10px;
-    border-radius: 10px;
+
+
+
+.register-submit:hover{
+    transform: scale(1.1,1.1);
 }
 
-.text{
-    font-size: 1.4rem;
-    width:100px;
-    
-}
 
-.search{
-    /* border: 2px solid black; */
-    margin-right: 10px;
-    width:100px;
-    height:30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.search input{
-    width:90%;
-    height:60%;
-    border-radius: 50px;
-    padding-left: 10px;
-    font-size: 0.5rem;
-    transition: transform 0.5s;
-}
-
-}
