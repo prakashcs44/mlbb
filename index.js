@@ -9,24 +9,43 @@ const info = document.querySelector(".info");
 
 let currInfoScrollHeight = 0;
 
-const infoScrollHeight = info.scrollHeight;
+const infoScrollHeight = 560;
+
+
+
+
+
+
 
 const scrollInfo = ()=>{
    
     info.scrollTo(0,currInfoScrollHeight);
-    currInfoScrollHeight++;
-
-    if( currInfoScrollHeight>=infoScrollHeight){
-        currInfoScrollHeight = 0;
-        info.scrollTo(0,0);
-       
-    }
+    currInfoScrollHeight = (currInfoScrollHeight+1)%(infoScrollHeight+1);
 }
 
 
 
 let scrollInfoInterval = setInterval(scrollInfo,1000/50);
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+info.addEventListener("scroll",()=>{
+   currInfoScrollHeight = info.scrollTop;
+   
+})
+
 
 info.addEventListener("mouseover",()=>{
     clearInterval(scrollInfoInterval)
@@ -40,3 +59,5 @@ info.addEventListener("mouseout",()=>{
 registerBtn.addEventListener("click",()=>{
     window.scrollTo(0,document.body.scrollHeight);
 })
+
+
